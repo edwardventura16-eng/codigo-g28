@@ -1,77 +1,32 @@
-<!--ORDEN -->
 <!DOCTYPE html>
-<!-- ETIQUETA HTML CONTENEDORA-->
-<HTML>
-<HEAD>
-       <!--el titulo es el texto que aparece en la pestaña--> 
-<title>Codigo-G28</title>
-</head> 
-
-<style>
-   body > * {
-        border: solid 3px green
-     }
-</style>
-
-    <body>
-    <!--titulos -->
-<h1>Codigo G28 - Frontend</h1>
-<h2>Titulo 2</h2>
-<h3>Titulo 3</h3>
-<h4>Titulo 4</h4>
-<h5>Titulo 5</h5>
-<h6>Titulo 6</h6>
-<!--PARRAFOS-->
-<p> Es la etiqueta para contener parrafos.</p>
-<!--IMAGES -->
-<img 
- src="data:image/webp;base64,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"
- alt="Imagen del curso de codigo" 
- width="500"
- height="400"
- />
-
- <img 
- src="./WhatsApp Image 2025-10-22 at 9.34.32 PM.jpeg"
- width="300" 
- height="500"
- alt="charla codig tepsup">
- />
-
- <!--ETIQUETA ANCHOR-->
- <!--target="_blanck" abre el enlace en otra pestaña-->
- ><a href="https://youtu.be/wIsJNkkDKts?si=Pa9-ZjA3S2xFbcbc" target="_blank">
- Video sobre IA
- </a>
- <!--LISTAS-->
- <!--LISTA ORDENADA-->
-</ol>
-   <li>Casa</li>
-   <li>Perro</li>
-   <li>celular</li>
-</ol>
-   <!--lista no ardenada-->
-<ul>
-    <li>fresa</li>
-    <li>pera</li>
-    <li>manzana</li>
-    </ul>
-  <div>
-  <img 
- src="data:image/webp;base64,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"
- alt="Imagen del curso de codigo" 
- width="500"
- height="400"
- />
-
- <img 
- src="./WhatsApp Image 2025-10-22 at 9.34.32 PM.jpeg"
- width="300" 
- height="500"
- alt="charla codig tepsup"
- />
-  </div>
-  <p>hola mundo</p>
- </body>
-</html>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+     <!-- Menu de navegación header -->
+    <header>
+        <!--navegacion-->
+        <nav>
+            <!--logo-enlace-->
+            <div>
+                <img src="./logo.svg" alt="logo de portafolio">
+            </div>
+            <!--listado de items(home, about)-->
+        </nav>
+    </header>
+      <!--la seccion principal -->
+      <main></main>
+      <!-- pie de pagina (footer) -->
+   <footer></footer>      
+  </body>
+   </html>
