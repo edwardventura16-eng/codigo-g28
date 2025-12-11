@@ -10,6 +10,10 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .menu {
     padding: 28px;
     display: flex;
@@ -41,6 +45,38 @@ body {
     background-color: #fd6f00;
     padding: 6px;
     border-radius: 6px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile > img {
+    border-radius: 50%;
+    border: solid 2px #fd6f00;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #fff;
+}
+
+.profile > img {
+    overflow: hidden;
+    position: absolute;
+    top: -89px;
+    left: -30px;
+    
+}
+.social-media{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 /* Crear una condicion para aplicar estilos en desktop */
